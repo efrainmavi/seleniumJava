@@ -1,5 +1,6 @@
 package org.example.listeners;
 
+import org.example.utilities.FileManager;
 import org.example.utilities.Logs;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -18,6 +19,7 @@ public class TestListeners implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         Logs.info("Test fallido: %s", result.getName());
+        FileManager.getScreenshot(result.getName());
     }
 
     @Override

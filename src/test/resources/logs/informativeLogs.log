@@ -1,7 +1,7 @@
-22:33:14.568 INFO  AUTOMATION - Suite iniciada: Default Suite
-22:33:21.891 INFO  AUTOMATION - Comenzando el test: ejercicioUnoTest
-22:33:21.904 INFO  AUTOMATION - Navegando a: https://www.saucedemo.com/
-22:33:22.618 INFO  AUTOMATION - Obteniendo la URL actual
-22:33:22.621 INFO  AUTOMATION - Verificando la URL
-22:33:22.631 INFO  AUTOMATION - Test exitoso: ejercicioUnoTest
-22:33:22.749 INFO  AUTOMATION - Suite finalizada: Default Suite
+11:20:59.565 INFO  AUTOMATION - Suite iniciada: Default Suite
+11:21:17.939 INFO  AUTOMATION - Comenzando el test: alwaysFailTest
+11:21:17.992 INFO  AUTOMATION - Navegando a heroku app 
+11:21:48.932 INFO  AUTOMATION - Obteniendo la URL actual
+11:21:48.956 INFO  AUTOMATION - Comparando URL's
+11:21:49.028 INFO  AUTOMATION - Test fallido: alwaysFailTest
+11:21:50.344 INFO  AUTOMATION - Suite finalizada: Default Suite
