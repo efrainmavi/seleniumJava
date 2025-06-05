@@ -1,5 +1,6 @@
 package org.example.utilities;
 
+import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -31,5 +32,10 @@ public class FileManager {
         }catch (IOException ex){
             Logs.error("Error al Intentar limpiar la evidencia, %s: ", ex.getLocalizedMessage());
         }
+    }
+
+    @Attachment(value = "screenshot", type = "image/png")
+    public static byte[] getScreenshot(){
+        return ((TakesScreenshot) new WebdriverProvider().get()).getScreenshotAs(OutputType.BYTES);
     }
 }
