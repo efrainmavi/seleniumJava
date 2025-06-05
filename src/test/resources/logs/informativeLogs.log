@@ -1,0 +1,7 @@
+22:33:14.568 INFO  AUTOMATION - Suite iniciada: Default Suite
+22:33:21.891 INFO  AUTOMATION - Comenzando el test: ejercicioUnoTest
+22:33:21.904 INFO  AUTOMATION - Navegando a: https://www.saucedemo.com/
+22:33:22.618 INFO  AUTOMATION - Obteniendo la URL actual
+22:33:22.621 INFO  AUTOMATION - Verificando la URL
+22:33:22.631 INFO  AUTOMATION - Test exitoso: ejercicioUnoTest
+22:33:22.749 INFO  AUTOMATION - Suite finalizada: Default Suite
