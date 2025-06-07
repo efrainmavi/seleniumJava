@@ -1,39 +1,14 @@
-09:04:40.824 INFO  AUTOMATION - Suite iniciada: Surefire suite
-09:04:40.844 INFO  AUTOMATION - Limpiando folder de evidencias
-09:04:40.874 DEBUG AUTOMATION - Inicializando Driver
-09:04:43.731 DEBUG AUTOMATION - Maximizando Ventana
-09:04:44.076 DEBUG AUTOMATION - Eliminando Cookies
-09:04:44.086 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
-09:04:44.148 INFO  AUTOMATION - Comenzando el test: alwaysFailTest
-09:04:44.160 INFO  AUTOMATION - Navegando a heroku app 
-09:04:45.394 INFO  AUTOMATION - Obteniendo la URL actual
-09:04:45.400 INFO  AUTOMATION - Comparando URL's
-09:04:45.414 DEBUG AUTOMATION - Before test stop de allure
-09:04:45.574 INFO  AUTOMATION - Test fallido: alwaysFailTest
-09:04:45.575 DEBUG AUTOMATION - Tomando Screenshot
-09:04:45.715 DEBUG AUTOMATION - Eliminando la session del Driver
-09:04:45.813 DEBUG AUTOMATION - Inicializando Driver
-09:04:46.836 DEBUG AUTOMATION - Maximizando Ventana
-09:04:47.162 DEBUG AUTOMATION - Eliminando Cookies
-09:04:47.167 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
-09:04:47.171 INFO  AUTOMATION - Comenzando el test: ejercicioDosTest
-09:04:47.176 INFO  AUTOMATION - Navegando a heroku app 
-09:04:48.434 INFO  AUTOMATION - Navegando a Github
-09:04:50.929 INFO  AUTOMATION - Regresando a la pagina anterior
-09:04:50.948 INFO  AUTOMATION - Obteniendo la URL actual
-09:04:50.951 INFO  AUTOMATION - Comparando URL's
-09:04:50.955 DEBUG AUTOMATION - Before test stop de allure
-09:04:50.957 INFO  AUTOMATION - Test exitoso: ejercicioDosTest
-09:04:50.958 DEBUG AUTOMATION - Eliminando la session del Driver
-09:04:51.076 DEBUG AUTOMATION - Inicializando Driver
-09:04:51.985 DEBUG AUTOMATION - Maximizando Ventana
-09:04:52.326 DEBUG AUTOMATION - Eliminando Cookies
-09:04:52.330 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
-09:04:52.332 INFO  AUTOMATION - Comenzando el test: ejercicioUnoTest
-09:04:52.343 INFO  AUTOMATION - Navegando a: https://www.saucedemo.com/
-09:04:52.852 INFO  AUTOMATION - Obteniendo la URL actual
-09:04:52.856 INFO  AUTOMATION - Verificando la URL
-09:04:52.857 DEBUG AUTOMATION - Before test stop de allure
-09:04:52.858 INFO  AUTOMATION - Test exitoso: ejercicioUnoTest
-09:04:52.860 DEBUG AUTOMATION - Eliminando la session del Driver
-09:04:53.000 INFO  AUTOMATION - Suite finalizada: Surefire suite
+09:31:48.533 INFO  AUTOMATION - Suite iniciada: Default Suite
+09:31:48.557 INFO  AUTOMATION - Limpiando folder de evidencias
+09:31:48.623 DEBUG AUTOMATION - Inicializando Driver
+09:31:51.451 DEBUG AUTOMATION - Maximizando Ventana
+09:31:51.774 DEBUG AUTOMATION - Eliminando Cookies
+09:31:51.785 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
+09:31:51.834 INFO  AUTOMATION - Comenzando el test: ejercicioUnoTest
+09:31:51.846 INFO  AUTOMATION - Navegando a: https://www.saucedemo.com/
+09:31:52.381 INFO  AUTOMATION - Obteniendo la URL actual
+09:31:52.389 INFO  AUTOMATION - Verificando la URL
+09:31:52.398 DEBUG AUTOMATION - Before test stop de allure
+09:31:52.415 INFO  AUTOMATION - Test exitoso: ejercicioUnoTest
+09:31:52.419 DEBUG AUTOMATION - Eliminando la session del Driver
+09:31:52.522 INFO  AUTOMATION - Suite finalizada: Default Suite
