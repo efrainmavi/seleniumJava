@@ -1,7 +1,20 @@
-11:20:59.565 INFO  AUTOMATION - Suite iniciada: Default Suite
-11:21:17.939 INFO  AUTOMATION - Comenzando el test: alwaysFailTest
-11:21:17.992 INFO  AUTOMATION - Navegando a heroku app 
-11:21:48.932 INFO  AUTOMATION - Obteniendo la URL actual
-11:21:48.956 INFO  AUTOMATION - Comparando URL's
-11:21:49.028 INFO  AUTOMATION - Test fallido: alwaysFailTest
-11:21:50.344 INFO  AUTOMATION - Suite finalizada: Default Suite
+09:04:40.824 INFO  AUTOMATION - Suite iniciada: Surefire suite
+09:04:40.844 INFO  AUTOMATION - Limpiando folder de evidencias
+09:04:44.148 INFO  AUTOMATION - Comenzando el test: alwaysFailTest
+09:04:44.160 INFO  AUTOMATION - Navegando a heroku app 
+09:04:45.394 INFO  AUTOMATION - Obteniendo la URL actual
+09:04:45.400 INFO  AUTOMATION - Comparando URL's
+09:04:45.574 INFO  AUTOMATION - Test fallido: alwaysFailTest
+09:04:47.171 INFO  AUTOMATION - Comenzando el test: ejercicioDosTest
+09:04:47.176 INFO  AUTOMATION - Navegando a heroku app 
+09:04:48.434 INFO  AUTOMATION - Navegando a Github
+09:04:50.929 INFO  AUTOMATION - Regresando a la pagina anterior
+09:04:50.948 INFO  AUTOMATION - Obteniendo la URL actual
+09:04:50.951 INFO  AUTOMATION - Comparando URL's
+09:04:50.957 INFO  AUTOMATION - Test exitoso: ejercicioDosTest
+09:04:52.332 INFO  AUTOMATION - Comenzando el test: ejercicioUnoTest
+09:04:52.343 INFO  AUTOMATION - Navegando a: https://www.saucedemo.com/
+09:04:52.852 INFO  AUTOMATION - Obteniendo la URL actual
+09:04:52.856 INFO  AUTOMATION - Verificando la URL
+09:04:52.858 INFO  AUTOMATION - Test exitoso: ejercicioUnoTest
+09:04:53.000 INFO  AUTOMATION - Suite finalizada: Surefire suite

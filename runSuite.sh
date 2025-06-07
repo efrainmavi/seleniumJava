@@ -1,1 +1,1 @@
-./mvnw clean test -Dgroups="regression"
+mvn clean test -Dgroups="regression"

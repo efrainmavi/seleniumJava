@@ -1,1 +1,1 @@
-./mvnw allure:serve
+mvn allure:serve
