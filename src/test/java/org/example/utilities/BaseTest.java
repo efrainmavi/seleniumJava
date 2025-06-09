@@ -39,4 +39,12 @@ public class BaseTest {
 
         driver.quit();
     }
+
+    protected void sleep(int time){
+        try{
+            Thread.sleep(time);
+        }catch (InterruptedException ex){
+            Logs.error("Timeout Exception, Wait time exceded: %s", ex.getLocalizedMessage());
+        }
+    }
 }

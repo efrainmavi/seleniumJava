@@ -9,6 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Objects;
 
 public class FileManager {
 
@@ -64,5 +65,10 @@ public class FileManager {
         }catch (IOException ex){
             Logs.error("Error taking page source: %s", ex.getLocalizedMessage());
         }
+    }
+
+    @Attachment(value = "pageSource", type = "text/html", fileExtension = "txt")
+    public static String getPageSource(){
+        return Jsoup.parse(Objects.requireNonNull(new WebdriverProvider().get().getPageSource())).toString();
     }
 }

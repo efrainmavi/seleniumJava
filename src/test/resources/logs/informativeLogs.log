@@ -1,8 +1,10 @@
-09:31:48.533 INFO  AUTOMATION - Suite iniciada: Default Suite
-09:31:48.557 INFO  AUTOMATION - Limpiando folder de evidencias
-09:31:51.834 INFO  AUTOMATION - Comenzando el test: ejercicioUnoTest
-09:31:51.846 INFO  AUTOMATION - Navegando a: https://www.saucedemo.com/
-09:31:52.381 INFO  AUTOMATION - Obteniendo la URL actual
-09:31:52.389 INFO  AUTOMATION - Verificando la URL
-09:31:52.415 INFO  AUTOMATION - Test exitoso: ejercicioUnoTest
-09:31:52.522 INFO  AUTOMATION - Suite finalizada: Default Suite
+13:59:16.333 INFO  AUTOMATION - Suite iniciada: Default Suite
+13:59:16.473 INFO  AUTOMATION - Limpiando folder de evidencias
+13:59:21.132 INFO  AUTOMATION - Comenzando el test: ejercicioDosTest
+13:59:21.161 INFO  AUTOMATION - Navegando a heroku app 
+13:59:26.710 INFO  AUTOMATION - Navegando a Github
+13:59:47.493 INFO  AUTOMATION - Regresando a la pagina anterior
+13:59:49.078 INFO  AUTOMATION - Obteniendo la URL actual
+13:59:49.100 INFO  AUTOMATION - Comparando URL's
+13:59:49.150 INFO  AUTOMATION - Test exitoso: ejercicioDosTest
+13:59:49.686 INFO  AUTOMATION - Suite finalizada: Default Suite
