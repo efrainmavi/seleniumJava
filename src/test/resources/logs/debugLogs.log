@@ -1,16 +1,16 @@
-13:59:16.333 INFO  AUTOMATION - Suite iniciada: Default Suite
-13:59:16.473 INFO  AUTOMATION - Limpiando folder de evidencias
-13:59:16.637 DEBUG AUTOMATION - Inicializando Driver
-13:59:20.938 DEBUG AUTOMATION - Maximizando Ventana
-13:59:20.982 DEBUG AUTOMATION - Eliminando Cookies
-13:59:20.995 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
-13:59:21.132 INFO  AUTOMATION - Comenzando el test: ejercicioDosTest
-13:59:21.161 INFO  AUTOMATION - Navegando a heroku app 
-13:59:26.710 INFO  AUTOMATION - Navegando a Github
-13:59:47.493 INFO  AUTOMATION - Regresando a la pagina anterior
-13:59:49.078 INFO  AUTOMATION - Obteniendo la URL actual
-13:59:49.100 INFO  AUTOMATION - Comparando URL's
-13:59:49.114 DEBUG AUTOMATION - Before test stop de allure
-13:59:49.150 INFO  AUTOMATION - Test exitoso: ejercicioDosTest
-13:59:49.151 DEBUG AUTOMATION - Eliminando la session del Driver
-13:59:49.686 INFO  AUTOMATION - Suite finalizada: Default Suite
+21:34:39.001 INFO  AUTOMATION - Suite iniciada: Default Suite
+21:34:39.023 INFO  AUTOMATION - Limpiando folder de evidencias
+21:34:39.071 DEBUG AUTOMATION - Inicializando Driver
+21:34:40.780 DEBUG AUTOMATION - Maximizando Ventana
+21:34:41.118 DEBUG AUTOMATION - Eliminando Cookies
+21:34:41.124 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
+21:34:41.166 INFO  AUTOMATION - Comenzando el test: testUsuarioValido
+21:34:41.175 INFO  AUTOMATION - Navegate to Sauce Labs page
+21:34:44.630 INFO  AUTOMATION - Filling Login Form
+21:34:44.887 INFO  AUTOMATION - Click on Login Button
+21:34:49.963 INFO  AUTOMATION - Manejando La alerta
+21:34:49.964 INFO  AUTOMATION - Verificando la pagina principal
+21:34:49.991 DEBUG AUTOMATION - Before test stop de allure
+21:34:50.005 INFO  AUTOMATION - Test exitoso: testUsuarioValido
+21:34:50.006 DEBUG AUTOMATION - Eliminando la session del Driver
+21:34:50.113 INFO  AUTOMATION - Suite finalizada: Default Suite
