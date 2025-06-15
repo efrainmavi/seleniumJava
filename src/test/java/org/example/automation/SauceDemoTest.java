@@ -7,6 +7,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.util.List;
+
 public class SauceDemoTest extends BaseTest {
 
     @Test
@@ -28,14 +32,39 @@ public class SauceDemoTest extends BaseTest {
 
         sleep(3000);
 
-        //TODO: arreglar la falla de la alerta
-        Logs.info("Manejando La alerta");
-       // Alert alert = driver.switchTo().alert();
-
-        //alert.accept();
-
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
+    }
+
+    @Test
+    public void testDetallesProducto() throws AWTException {
+        llenarFormulario("standard_user","secret_sauce");
+
+        //TODO: Handle password alert
+        Logs.info("Manejando La alerta");
+        //Alert alert = driver.switchTo().alert();
+
+        /*
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        */
+
+        //alert.accept();
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        List<WebElement> product = driver.findElements(By.cssSelector("img[class='inventory_item_img']"));
+        product.get(0).click();
+
+        sleep(1000);
+
+        softAssert.assertTrue(driver.findElement(By.cssSelector("[data-test='inventory-item-name']")).isDisplayed());
+        softAssert.assertTrue(driver.findElement(By.cssSelector("[data-test='inventory-item-desc']")).isDisplayed());
+        softAssert.assertTrue(driver.findElement(By.cssSelector("[data-test='inventory-item-price']")).isDisplayed());
+        softAssert.assertTrue(driver.findElement(By.cssSelector("[data-test='item-sauce-labs-backpack-img']")).isDisplayed());
+        softAssert.assertTrue(driver.findElement(By.cssSelector("[data-test='add-to-cart']")).isDisplayed());
+        softAssert.assertAll();
     }
 
     private void llenarFormulario(String userName, String password){

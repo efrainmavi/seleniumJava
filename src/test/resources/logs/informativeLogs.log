@@ -1,10 +1,10 @@
-21:34:39.001 INFO  AUTOMATION - Suite iniciada: Default Suite
-21:34:39.023 INFO  AUTOMATION - Limpiando folder de evidencias
-21:34:41.166 INFO  AUTOMATION - Comenzando el test: testUsuarioValido
-21:34:41.175 INFO  AUTOMATION - Navegate to Sauce Labs page
-21:34:44.630 INFO  AUTOMATION - Filling Login Form
-21:34:44.887 INFO  AUTOMATION - Click on Login Button
-21:34:49.963 INFO  AUTOMATION - Manejando La alerta
-21:34:49.964 INFO  AUTOMATION - Verificando la pagina principal
-21:34:50.005 INFO  AUTOMATION - Test exitoso: testUsuarioValido
-21:34:50.113 INFO  AUTOMATION - Suite finalizada: Default Suite
+10:37:26.136 INFO  AUTOMATION - Suite iniciada: Default Suite
+10:37:26.157 INFO  AUTOMATION - Limpiando folder de evidencias
+10:37:27.718 INFO  AUTOMATION - Comenzando el test: testDetallesProducto
+10:37:27.725 INFO  AUTOMATION - Navegate to Sauce Labs page
+10:37:31.589 INFO  AUTOMATION - Filling Login Form
+10:37:31.757 INFO  AUTOMATION - Click on Login Button
+10:37:33.814 INFO  AUTOMATION - Manejando La alerta
+10:37:33.818 INFO  AUTOMATION - Verificando la pagina principal
+10:37:35.007 INFO  AUTOMATION - Test exitoso: testDetallesProducto
+10:37:35.115 INFO  AUTOMATION - Suite finalizada: Default Suite
