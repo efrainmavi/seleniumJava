@@ -10,9 +10,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.asserts.SoftAssert;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @Listeners({TestListeners.class, SuiteListeners.class})
 public class BaseTest {
     protected SoftAssert softAssert;
@@ -26,9 +23,8 @@ public class BaseTest {
         softAssert = new SoftAssert();
 
         Logs.debug("Inicializando Driver");
-        
-        driver = new ChromeDriver();
 
+        driver = new ChromeDriver();
 
         Logs.debug("Maximizando Ventana");
         driver.manage().window().maximize();

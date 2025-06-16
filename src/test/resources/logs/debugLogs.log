@@ -1,15 +1,39 @@
-07:36:00.242 INFO  AUTOMATION - Suite iniciada: Default Suite
-07:36:00.371 INFO  AUTOMATION - Limpiando folder de evidencias
-07:36:00.486 DEBUG AUTOMATION - Inicializando Driver
-07:36:04.169 DEBUG AUTOMATION - Maximizando Ventana
-07:36:04.218 DEBUG AUTOMATION - Eliminando Cookies
-07:36:04.233 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
-07:36:04.355 INFO  AUTOMATION - Comenzando el test: testDetallesProducto
-07:36:04.400 INFO  AUTOMATION - Navegate to Sauce Labs page
-07:36:08.605 INFO  AUTOMATION - Filling Login Form
-07:36:08.801 INFO  AUTOMATION - Click on Login Button
-07:36:10.912 INFO  AUTOMATION - Verificando la pagina principal
-07:36:12.172 DEBUG AUTOMATION - Before test stop de allure
-07:36:12.187 INFO  AUTOMATION - Test exitoso: testDetallesProducto
-07:36:12.187 DEBUG AUTOMATION - Eliminando la session del Driver
-07:36:12.601 INFO  AUTOMATION - Suite finalizada: Default Suite
+07:48:23.604 INFO  AUTOMATION - Suite iniciada: Default Suite
+07:48:23.778 INFO  AUTOMATION - Limpiando folder de evidencias
+07:48:23.951 DEBUG AUTOMATION - Inicializando Driver
+07:48:28.052 DEBUG AUTOMATION - Maximizando Ventana
+07:48:28.094 DEBUG AUTOMATION - Eliminando Cookies
+07:48:28.114 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
+07:48:28.307 INFO  AUTOMATION - Comenzando el test: testDetallesProducto
+07:48:28.344 INFO  AUTOMATION - Navegate to Sauce Labs page
+07:48:32.467 INFO  AUTOMATION - Filling Login Form
+07:48:32.754 INFO  AUTOMATION - Click on Login Button
+07:48:34.961 INFO  AUTOMATION - Verificando la pagina principal
+07:48:36.282 DEBUG AUTOMATION - Before test stop de allure
+07:48:36.294 INFO  AUTOMATION - Test exitoso: testDetallesProducto
+07:48:36.296 DEBUG AUTOMATION - Eliminando la session del Driver
+07:48:36.673 DEBUG AUTOMATION - Inicializando Driver
+07:48:39.848 DEBUG AUTOMATION - Maximizando Ventana
+07:48:39.880 DEBUG AUTOMATION - Eliminando Cookies
+07:48:39.895 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
+07:48:39.895 INFO  AUTOMATION - Comenzando el test: testUsuarioInvalido
+07:48:39.895 INFO  AUTOMATION - Navegate to Sauce Labs page
+07:48:44.018 INFO  AUTOMATION - Filling Login Form
+07:48:44.244 INFO  AUTOMATION - Click on Login Button
+07:48:46.344 INFO  AUTOMATION - Get an Error Message
+07:48:46.415 DEBUG AUTOMATION - Before test stop de allure
+07:48:46.416 INFO  AUTOMATION - Test exitoso: testUsuarioInvalido
+07:48:46.416 DEBUG AUTOMATION - Eliminando la session del Driver
+07:48:46.818 DEBUG AUTOMATION - Inicializando Driver
+07:48:49.899 DEBUG AUTOMATION - Maximizando Ventana
+07:48:49.952 DEBUG AUTOMATION - Eliminando Cookies
+07:48:49.959 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
+07:48:49.968 INFO  AUTOMATION - Comenzando el test: testUsuarioValido
+07:48:49.968 INFO  AUTOMATION - Navegate to Sauce Labs page
+07:48:54.113 INFO  AUTOMATION - Filling Login Form
+07:48:54.323 INFO  AUTOMATION - Click on Login Button
+07:48:59.474 INFO  AUTOMATION - Verificando la pagina principal
+07:48:59.504 DEBUG AUTOMATION - Before test stop de allure
+07:48:59.509 INFO  AUTOMATION - Test exitoso: testUsuarioValido
+07:48:59.511 DEBUG AUTOMATION - Eliminando la session del Driver
+07:48:59.942 INFO  AUTOMATION - Suite finalizada: Default Suite
