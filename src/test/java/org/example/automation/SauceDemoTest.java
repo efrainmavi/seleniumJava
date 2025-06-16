@@ -2,13 +2,10 @@ package org.example.automation;
 
 import org.example.utilities.BaseTest;
 import org.example.utilities.Logs;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.util.List;
 
 public class SauceDemoTest extends BaseTest {
@@ -37,20 +34,9 @@ public class SauceDemoTest extends BaseTest {
     }
 
     @Test
-    public void testDetallesProducto() throws AWTException {
+    public void testDetallesProducto() {
         llenarFormulario("standard_user","secret_sauce");
 
-        //TODO: Handle password alert
-        Logs.info("Manejando La alerta");
-        //Alert alert = driver.switchTo().alert();
-
-        /*
-        Robot robot = new Robot();
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
-        */
-
-        //alert.accept();
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
 

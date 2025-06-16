@@ -26,17 +26,8 @@ public class BaseTest {
         softAssert = new SoftAssert();
 
         Logs.debug("Inicializando Driver");
-        options = new ChromeOptions();
-        options.addArguments("--disable-notifications");
-        options.addArguments("--disable-infobars");
-        options.addArguments("--disable-save-password-bubble");
-        options.setExperimentalOption("prefs", Map.of(
-                "credentials_enable_service", false,
-                "profile.password_manager_enabled", false
-        ));
-        options.addArguments("/Users/efrain/Desktop/test-data=/selenium_clean_profile");
-
-        driver = new ChromeDriver(options);
+        
+        driver = new ChromeDriver();
 
 
         Logs.debug("Maximizando Ventana");
