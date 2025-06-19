@@ -1,9 +1,9 @@
-11:48:14.013 INFO  AUTOMATION - Suite iniciada: Default Suite
-11:48:14.178 INFO  AUTOMATION - Limpiando folder de evidencias
-11:48:19.120 INFO  AUTOMATION - Comenzando el test: testLinkedinLink
-11:48:19.169 INFO  AUTOMATION - Navegate to Sauce Labs page
-11:48:23.585 INFO  AUTOMATION - Filling Login Form
-11:48:23.991 INFO  AUTOMATION - Click on Login Button
-11:48:29.141 INFO  AUTOMATION - Verificando la pagina principal
-11:48:29.330 INFO  AUTOMATION - Test exitoso: testLinkedinLink
-11:48:29.945 INFO  AUTOMATION - Suite finalizada: Default Suite
+14:24:02.023 INFO  AUTOMATION - Suite iniciada: Default Suite
+14:24:02.206 INFO  AUTOMATION - Limpiando folder de evidencias
+14:24:07.218 INFO  AUTOMATION - Comenzando el test: testMenuBurger
+14:24:07.295 INFO  AUTOMATION - Navegate to Sauce Labs page
+14:24:11.770 INFO  AUTOMATION - Filling Login Form
+14:24:12.038 INFO  AUTOMATION - Click on Login Button
+14:24:17.222 INFO  AUTOMATION - Verificando la pagina principal
+14:24:19.500 INFO  AUTOMATION - Test exitoso: testMenuBurger
+14:24:19.988 INFO  AUTOMATION - Suite finalizada: Default Suite

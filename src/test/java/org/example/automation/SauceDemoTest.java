@@ -166,6 +166,28 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertAll();
     }
 
+    @Test
+    public void testMenuBurger(){
+        llenarFormulario("standard_user","secret_sauce");
+
+        sleep(3000);
+
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        driver.findElement(By.id("react-burger-menu-btn")).click();
+
+        sleep(2000);
+
+        WebElement aboutLink = driver.findElement(By.cssSelector("[data-test='about-sidebar-link']"));
+        String hrefLink = aboutLink.getAttribute("href");
+
+        softAssert.assertTrue(aboutLink.isDisplayed());
+        softAssert.assertTrue(aboutLink.isEnabled());
+        softAssert.assertEquals(hrefLink, "https://saucelabs.com/");
+        softAssert.assertAll();
+    }
+
     private void llenarFormulario(String userName, String password){
         Logs.info("Navegate to Sauce Labs page");
         driver.get("https://www.saucedemo.com/");
