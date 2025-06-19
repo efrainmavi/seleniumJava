@@ -4,6 +4,7 @@ import org.example.utilities.BaseTest;
 import org.example.utilities.Logs;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -51,6 +52,35 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertTrue(driver.findElement(By.cssSelector("[data-test='item-sauce-labs-backpack-img']")).isDisplayed());
         softAssert.assertTrue(driver.findElement(By.cssSelector("[data-test='add-to-cart']")).isDisplayed());
         softAssert.assertAll();
+    }
+
+    @Test
+    public void testSortItems(){
+        llenarFormulario("standard_user","secret_sauce");
+
+        sleep(3000);
+
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        WebElement selectSort = driver.findElement(By.cssSelector("[data-test='product-sort-container']"));
+
+        //Cast Select Element
+        Select select = new Select(selectSort);
+
+        Logs.info("Chose items to sort from Z -> A");
+        select.selectByValue("za");
+
+        List<WebElement> itemsName = driver.findElements(By.cssSelector("data-test='inventory-item'"));
+
+        String firstElementName = itemsName.get(0).getText();
+        String lastElementName = itemsName.get(itemsName.size() -1).getText();
+
+        softAssert.assertEquals(firstElementName, "Test.allTheThings() T-Shirt (Red)");
+        softAssert.assertEquals(lastElementName, "Sauce Labs Backpack");
+        softAssert.assertAll();
+
+        //Test.allTheThings() T-Shirt (Red)
     }
 
     private void llenarFormulario(String userName, String password){
