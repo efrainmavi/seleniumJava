@@ -107,9 +107,9 @@ public class SauceDemoTest extends BaseTest {
 
         System.out.println("Item Price " + firstElementName);
 
-        //softAssert.assertEquals(firstElementName, "Test.allTheThings() T-Shirt (Red)");
-        //softAssert.assertEquals(lastElementName, "Sauce Labs Backpack");
-        //softAssert.assertAll();
+        softAssert.assertEquals(firstElementName, "7.99");
+        softAssert.assertEquals(lastElementName, "49.99");
+        softAssert.assertAll();
 
         //Test.allTheThings() T-Shirt (Red)
     }
