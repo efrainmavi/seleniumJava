@@ -1,11 +1,10 @@
-23:01:35.878 INFO  AUTOMATION - Suite iniciada: Default Suite
-23:01:35.899 INFO  AUTOMATION - Limpiando folder de evidencias
-23:01:39.026 INFO  AUTOMATION - Comenzando el test: testSortItems
-23:01:39.036 INFO  AUTOMATION - Navegate to Sauce Labs page
-23:01:42.591 INFO  AUTOMATION - Filling Login Form
-23:01:42.829 INFO  AUTOMATION - Click on Login Button
-23:01:47.899 INFO  AUTOMATION - Verificando la pagina principal
-23:01:47.955 INFO  AUTOMATION - Chose items to sort from Z -> A
-23:01:48.285 INFO  AUTOMATION - Test fallido: testSortItems
-23:01:48.440 INFO  AUTOMATION - Taking page source
-23:01:48.565 INFO  AUTOMATION - Suite finalizada: Default Suite
+09:51:49.017 INFO  AUTOMATION - Suite iniciada: Default Suite
+09:51:49.218 INFO  AUTOMATION - Limpiando folder de evidencias
+09:51:53.898 INFO  AUTOMATION - Comenzando el test: testSortItemsByPrice
+09:51:53.993 INFO  AUTOMATION - Navegate to Sauce Labs page
+09:51:58.460 INFO  AUTOMATION - Filling Login Form
+09:51:58.794 INFO  AUTOMATION - Click on Login Button
+09:52:03.943 INFO  AUTOMATION - Verificando la pagina principal
+09:52:04.056 INFO  AUTOMATION - Chose items to sort from low -> high
+09:52:04.299 INFO  AUTOMATION - Test exitoso: testSortItemsByPrice
+09:52:05.167 INFO  AUTOMATION - Suite finalizada: Default Suite

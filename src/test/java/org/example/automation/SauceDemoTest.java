@@ -55,7 +55,7 @@ public class SauceDemoTest extends BaseTest {
     }
 
     @Test
-    public void testSortItems(){
+    public void testSortItemsByLetter(){
         llenarFormulario("standard_user","secret_sauce");
 
         sleep(3000);
@@ -79,6 +79,37 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertEquals(firstElementName, "Test.allTheThings() T-Shirt (Red)");
         softAssert.assertEquals(lastElementName, "Sauce Labs Backpack");
         softAssert.assertAll();
+
+        //Test.allTheThings() T-Shirt (Red)
+    }
+
+    @Test
+    public void testSortItemsByPrice(){
+        llenarFormulario("standard_user","secret_sauce");
+
+        sleep(3000);
+
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        WebElement selectSort = driver.findElement(By.cssSelector("[data-test='product-sort-container']"));
+
+        //Cast Select Element
+        Select select = new Select(selectSort);
+
+        Logs.info("Chose items to sort from low -> high");
+        select.selectByValue("lohi");
+
+        List<WebElement> itemsName = driver.findElements(By.cssSelector("[data-test='inventory-item']"));
+
+        String firstElementName = itemsName.get(0).getText().replace("$","");
+        String lastElementName = itemsName.get(itemsName.size() -1).getText().replace("$","");
+
+        System.out.println("Item Price " + firstElementName);
+
+        //softAssert.assertEquals(firstElementName, "Test.allTheThings() T-Shirt (Red)");
+        //softAssert.assertEquals(lastElementName, "Sauce Labs Backpack");
+        //softAssert.assertAll();
 
         //Test.allTheThings() T-Shirt (Red)
     }
