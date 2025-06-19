@@ -110,8 +110,60 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertEquals(firstElementName, "7.99");
         softAssert.assertEquals(lastElementName, "49.99");
         softAssert.assertAll();
+    }
 
-        //Test.allTheThings() T-Shirt (Red)
+    @Test
+    public void testFacebookLink(){
+        llenarFormulario("standard_user","secret_sauce");
+
+        sleep(3000);
+
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        WebElement facebookLink = driver.findElement(By.cssSelector("[data-test='social-facebook']"));
+        String facebookHrefUrl = facebookLink.getAttribute("href");
+
+        softAssert.assertTrue(facebookLink.isDisplayed());
+        softAssert.assertTrue(facebookLink.isEnabled());
+        softAssert.assertEquals(facebookHrefUrl, "https://www.facebook.com/saucelabs");
+        softAssert.assertAll();
+    }
+
+    @Test
+    public void testTwitterLink(){
+        llenarFormulario("standard_user","secret_sauce");
+
+        sleep(3000);
+
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        WebElement twitterLink = driver.findElement(By.cssSelector("[data-test='social-twitter']"));
+        String twitterHrefUrl = twitterLink.getAttribute("href");
+
+        softAssert.assertTrue(twitterLink.isDisplayed());
+        softAssert.assertTrue(twitterLink.isEnabled());
+        softAssert.assertEquals(twitterHrefUrl, "https://twitter.com/saucelabs");
+        softAssert.assertAll();
+    }
+
+    @Test
+    public void testLinkedinLink(){
+        llenarFormulario("standard_user","secret_sauce");
+
+        sleep(3000);
+
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        WebElement linkedinLink = driver.findElement(By.cssSelector("[data-test='social-linkedin']"));
+        String linkedinHrefUrl = linkedinLink.getAttribute("href");
+
+        softAssert.assertTrue(linkedinLink.isDisplayed());
+        softAssert.assertTrue(linkedinLink.isEnabled());
+        softAssert.assertEquals(linkedinHrefUrl, "https://www.linkedin.com/company/sauce-labs/");
+        softAssert.assertAll();
     }
 
     private void llenarFormulario(String userName, String password){
