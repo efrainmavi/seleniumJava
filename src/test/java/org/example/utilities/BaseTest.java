@@ -34,6 +34,14 @@ public class BaseTest {
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-infobars");
 
+        //TODO Uncomment this block if it's necessary for get a clean profile for chrome webdriver - Refers to README.md file
+        /*String osPlatform = System.getProperty("os.name").toLowerCase();
+        if (osPlatform.contains("win")){
+            options.addArguments("--user-data-dir=C:/temp/chrome-profile-test");
+        }else {
+            options.addArguments("--user-data-dir=/tmp/chrome-profile-test");
+        }*/
+
         driver = new ChromeDriver(options);
 
         Logs.debug("Maximizando Ventana");
