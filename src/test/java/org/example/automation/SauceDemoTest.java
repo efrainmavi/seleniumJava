@@ -2,6 +2,7 @@ package org.example.automation;
 
 import org.example.utilities.BaseTest;
 import org.example.utilities.Logs;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -167,7 +168,7 @@ public class SauceDemoTest extends BaseTest {
     }
 
     @Test
-    public void testMenuBurger(){
+    public void testMenuBurgerAbout(){
         llenarFormulario("standard_user","secret_sauce");
 
         sleep(3000);
@@ -186,6 +187,27 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertTrue(aboutLink.isEnabled());
         softAssert.assertEquals(hrefLink, "https://saucelabs.com/");
         softAssert.assertAll();
+    }
+
+    @Test
+    public void testMenuBurgerLogOut(){
+        llenarFormulario("standard_user","secret_sauce");
+
+        sleep(3000);
+
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        driver.findElement(By.id("react-burger-menu-btn")).click();
+
+        sleep(2000);
+
+        //LogOut
+        driver.findElement(By.cssSelector("[data-test='logout-sidebar-link']")).click();
+
+        sleep(2000);
+
+        driver.findElement(By.cssSelector("[data-test='login-container']"));
     }
 
     private void llenarFormulario(String userName, String password){
