@@ -10,12 +10,10 @@ public class NavegacionTests extends BaseTest {
     String urlHeroku = "https://the-internet.herokuapp.com/";
     String urlGithub = "https://github.com/";
 
-    @Test(groups = {regression, smoke})
+    @Test
     public void ejercicioUnoTest(){
         Logs.info("Navegando a: %s", url);
         driver.get(url);
-
-        sleep(2000);
 
         Logs.info("Obteniendo la URL actual");
         String currentUrl = driver.getCurrentUrl();
@@ -24,23 +22,17 @@ public class NavegacionTests extends BaseTest {
         Assert.assertEquals(currentUrl, url);
     }
 
-    @Test(groups = {regression})
+    @Test
     public void ejercicioDosTest(){
 
         Logs.info("Navegando a heroku app ");
         driver.get(urlHeroku);
 
-        sleep(2000);
-
         Logs.info("Navegando a Github");
         driver.get(urlGithub);
 
-        sleep(3000);
-
         Logs.info("Regresando a la pagina anterior");
         driver.navigate().back();
-
-        sleep(1500);
 
         Logs.info("Obteniendo la URL actual");
         String currentUrl = driver.getCurrentUrl();
@@ -50,7 +42,7 @@ public class NavegacionTests extends BaseTest {
 
     }
 
-    @Test(groups = {regression})
+    @Test
     public void alwaysFailTest(){
         Logs.info("Navegando a heroku app ");
         driver.get(urlHeroku);

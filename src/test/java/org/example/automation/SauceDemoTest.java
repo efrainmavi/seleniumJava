@@ -2,17 +2,20 @@ package org.example.automation;
 
 import org.example.utilities.BaseTest;
 import org.example.utilities.Logs;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.List;
 
 public class SauceDemoTest extends BaseTest {
 
-    @Test
+    @Test(groups = {regression, smoke})
     public void testUsuarioInvalido() {
 
         llenarFormulario("locked_out_user", "secret_sauce");
@@ -25,17 +28,17 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression, smoke})
     public void testUsuarioValido(){
         llenarFormulario("standard_user","secret_sauce");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
     }
 
-    @Test
+    @Test(groups = {regression})
     public void testDetallesProducto() {
         llenarFormulario("standard_user","secret_sauce");
 
@@ -45,7 +48,7 @@ public class SauceDemoTest extends BaseTest {
         List<WebElement> product = driver.findElements(By.cssSelector("img[class='inventory_item_img']"));
         product.get(0).click();
 
-        sleep(1000);
+        //sleep(1000);
 
         softAssert.assertTrue(driver.findElement(By.cssSelector("[data-test='inventory-item-name']")).isDisplayed());
         softAssert.assertTrue(driver.findElement(By.cssSelector("[data-test='inventory-item-desc']")).isDisplayed());
@@ -55,11 +58,11 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void testSortItemsByLetter(){
         llenarFormulario("standard_user","secret_sauce");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
@@ -72,7 +75,7 @@ public class SauceDemoTest extends BaseTest {
         Logs.info("Chose items to sort from Z -> A");
         select.selectByValue("za");
 
-        List<WebElement> itemsName = driver.findElements(By.cssSelector("data-test='inventory-item'"));
+        List<WebElement> itemsName = driver.findElements(By.cssSelector("[data-test='inventory-item-name']"));
 
         String firstElementName = itemsName.get(0).getText();
         String lastElementName = itemsName.get(itemsName.size() -1).getText();
@@ -84,11 +87,11 @@ public class SauceDemoTest extends BaseTest {
         //Test.allTheThings() T-Shirt (Red)
     }
 
-    @Test
+    @Test(groups = {regression})
     public void testSortItemsByPrice(){
         llenarFormulario("standard_user","secret_sauce");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
@@ -101,23 +104,23 @@ public class SauceDemoTest extends BaseTest {
         Logs.info("Chose items to sort from low -> high");
         select.selectByValue("lohi");
 
-        List<WebElement> itemsName = driver.findElements(By.cssSelector("[data-test='inventory-item']"));
+        List<WebElement> itemsPrice = driver.findElements(By.cssSelector("[data-test='inventory-item-price']"));
 
-        String firstElementName = itemsName.get(0).getText().replace("$","");
-        String lastElementName = itemsName.get(itemsName.size() -1).getText().replace("$","");
+        String firstElementPrice = itemsPrice.get(0).getText().replace("$","");
+        String lastElementPrice = itemsPrice.get(itemsPrice.size() -1).getText().replace("$","");
 
-        System.out.println("Item Price " + firstElementName);
+        System.out.println("Item Price " + firstElementPrice);
 
-        softAssert.assertEquals(firstElementName, "7.99");
-        softAssert.assertEquals(lastElementName, "49.99");
+        softAssert.assertEquals(firstElementPrice, "7.99");
+        softAssert.assertEquals(lastElementPrice, "49.99");
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void testFacebookLink(){
         llenarFormulario("standard_user","secret_sauce");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
@@ -131,11 +134,11 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void testTwitterLink(){
         llenarFormulario("standard_user","secret_sauce");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
@@ -149,11 +152,11 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void testLinkedinLink(){
         llenarFormulario("standard_user","secret_sauce");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
@@ -167,18 +170,21 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void testMenuBurgerAbout(){
         llenarFormulario("standard_user","secret_sauce");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
 
         driver.findElement(By.id("react-burger-menu-btn")).click();
 
-        sleep(2000);
+        WebElement menu = driver.findElement(By.className("bm-item-list"));
+
+        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(1500));
+        wait.until(element -> menu.isDisplayed());
 
         WebElement aboutLink = driver.findElement(By.cssSelector("[data-test='about-sidebar-link']"));
         String hrefLink = aboutLink.getAttribute("href");
@@ -189,23 +195,23 @@ public class SauceDemoTest extends BaseTest {
         softAssert.assertAll();
     }
 
-    @Test
+    @Test(groups = {regression})
     public void testMenuBurgerLogOut(){
         llenarFormulario("standard_user","secret_sauce");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Verificando la pagina principal");
         driver.findElement(By.cssSelector("[data-test='title']"));
 
         driver.findElement(By.id("react-burger-menu-btn")).click();
 
-        sleep(2000);
+        //sleep(2000);
 
         //LogOut
         driver.findElement(By.cssSelector("[data-test='logout-sidebar-link']")).click();
 
-        sleep(2000);
+        //sleep(2000);
 
         driver.findElement(By.cssSelector("[data-test='login-container']"));
     }
@@ -214,7 +220,7 @@ public class SauceDemoTest extends BaseTest {
         Logs.info("Navegate to Sauce Labs page");
         driver.get("https://www.saucedemo.com/");
 
-        sleep(3000);
+        //sleep(3000);
 
         Logs.info("Filling Login Form");
         driver.findElement(By.cssSelector("[data-test='username']")).sendKeys(userName);
@@ -224,6 +230,6 @@ public class SauceDemoTest extends BaseTest {
 
         driver.findElement(By.id("login-button")).click();
 
-        sleep(2000);
+        //sleep(2000);
     }
 }
