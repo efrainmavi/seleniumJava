@@ -1,65 +1,9 @@
-20:31:33.647 INFO  AUTOMATION - Suite iniciada: Default Suite
-20:31:33.668 INFO  AUTOMATION - Limpiando folder de evidencias
-20:31:35.398 INFO  AUTOMATION - Comenzando el test: testDetallesProducto
-20:31:35.407 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:35.885 INFO  AUTOMATION - Filling Login Form
-20:31:36.055 INFO  AUTOMATION - Click on Login Button
-20:31:36.102 INFO  AUTOMATION - Verificando la pagina principal
-20:31:36.264 INFO  AUTOMATION - Test exitoso: testDetallesProducto
-20:31:37.586 INFO  AUTOMATION - Comenzando el test: testFacebookLink
-20:31:37.590 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:38.141 INFO  AUTOMATION - Filling Login Form
-20:31:38.288 INFO  AUTOMATION - Click on Login Button
-20:31:38.339 INFO  AUTOMATION - Verificando la pagina principal
-20:31:38.365 INFO  AUTOMATION - Test exitoso: testFacebookLink
-20:31:39.619 INFO  AUTOMATION - Comenzando el test: testLinkedinLink
-20:31:39.622 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:40.103 INFO  AUTOMATION - Filling Login Form
-20:31:40.265 INFO  AUTOMATION - Click on Login Button
-20:31:40.315 INFO  AUTOMATION - Verificando la pagina principal
-20:31:40.342 INFO  AUTOMATION - Test exitoso: testLinkedinLink
-20:31:41.613 INFO  AUTOMATION - Comenzando el test: testMenuBurgerAbout
-20:31:41.614 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:42.067 INFO  AUTOMATION - Filling Login Form
-20:31:42.201 INFO  AUTOMATION - Click on Login Button
-20:31:42.249 INFO  AUTOMATION - Verificando la pagina principal
-20:31:44.339 INFO  AUTOMATION - Test exitoso: testMenuBurgerAbout
-20:31:45.631 INFO  AUTOMATION - Comenzando el test: testMenuBurgerLogOut
-20:31:45.633 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:46.083 INFO  AUTOMATION - Filling Login Form
-20:31:46.240 INFO  AUTOMATION - Click on Login Button
-20:31:46.285 INFO  AUTOMATION - Verificando la pagina principal
-20:31:46.475 INFO  AUTOMATION - Test exitoso: testMenuBurgerLogOut
-20:31:47.717 INFO  AUTOMATION - Comenzando el test: testSortItemsByLetter
-20:31:47.719 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:48.183 INFO  AUTOMATION - Filling Login Form
-20:31:48.346 INFO  AUTOMATION - Click on Login Button
-20:31:48.394 INFO  AUTOMATION - Verificando la pagina principal
-20:31:48.421 INFO  AUTOMATION - Chose items to sort from Z -> A
-20:31:48.470 INFO  AUTOMATION - Test exitoso: testSortItemsByLetter
-20:31:49.704 INFO  AUTOMATION - Comenzando el test: testSortItemsByPrice
-20:31:49.705 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:50.185 INFO  AUTOMATION - Filling Login Form
-20:31:50.323 INFO  AUTOMATION - Click on Login Button
-20:31:50.365 INFO  AUTOMATION - Verificando la pagina principal
-20:31:50.388 INFO  AUTOMATION - Chose items to sort from low -> high
-20:31:50.437 INFO  AUTOMATION - Test exitoso: testSortItemsByPrice
-20:31:51.720 INFO  AUTOMATION - Comenzando el test: testTwitterLink
-20:31:51.723 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:52.176 INFO  AUTOMATION - Filling Login Form
-20:31:52.334 INFO  AUTOMATION - Click on Login Button
-20:31:52.382 INFO  AUTOMATION - Verificando la pagina principal
-20:31:52.411 INFO  AUTOMATION - Test exitoso: testTwitterLink
-20:31:53.684 INFO  AUTOMATION - Comenzando el test: testUsuarioInvalido
-20:31:53.685 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:54.175 INFO  AUTOMATION - Filling Login Form
-20:31:54.349 INFO  AUTOMATION - Click on Login Button
-20:31:54.393 INFO  AUTOMATION - Get an Error Message
-20:31:54.411 INFO  AUTOMATION - Test exitoso: testUsuarioInvalido
-20:31:55.761 INFO  AUTOMATION - Comenzando el test: testUsuarioValido
-20:31:55.767 INFO  AUTOMATION - Navegate to Sauce Labs page
-20:31:56.230 INFO  AUTOMATION - Filling Login Form
-20:31:56.382 INFO  AUTOMATION - Click on Login Button
-20:31:56.427 INFO  AUTOMATION - Verificando la pagina principal
-20:31:56.434 INFO  AUTOMATION - Test exitoso: testUsuarioValido
-20:31:56.534 INFO  AUTOMATION - Suite finalizada: Default Suite
+09:09:50.383 INFO  AUTOMATION - Suite iniciada: Default Suite
+09:09:50.406 INFO  AUTOMATION - Limpiando folder de evidencias
+09:09:52.202 INFO  AUTOMATION - Comenzando el test: testNewWindow
+09:09:52.211 INFO  AUTOMATION - Navegando a pagina
+09:09:53.346 INFO  AUTOMATION - Click en boton new window
+09:09:53.610 INFO  AUTOMATION - Verificamos que el texto
+09:09:53.855 INFO  AUTOMATION - Cerrando la ventana actual y regresando a la ventana original
+09:09:53.961 INFO  AUTOMATION - Test exitoso: testNewWindow
+09:09:54.061 INFO  AUTOMATION - Suite finalizada: Default Suite
