@@ -183,6 +183,7 @@ public class SauceDemoTest extends BaseTest {
 
         WebElement menu = driver.findElement(By.className("bm-item-list"));
 
+        Logs.info("Creando explicit wait");
         Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(1500));
         wait.until(element -> menu.isDisplayed());
 
