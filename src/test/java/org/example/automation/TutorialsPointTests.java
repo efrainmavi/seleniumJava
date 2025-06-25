@@ -3,9 +3,11 @@ package org.example.automation;
 import org.example.utilities.BaseTest;
 import org.example.utilities.Logs;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.Objects;
 import java.util.Set;
 
 public class TutorialsPointTests extends BaseTest {
@@ -76,5 +78,23 @@ public class TutorialsPointTests extends BaseTest {
 
         Logs.debug("Verificando la ventana original");
         Assert.assertTrue(driver.findElement(By.xpath("//h1[text()='Browser Windows']")).isDisplayed());
+    }
+
+    @Test
+    public void testIframe(){
+        Logs.info("Navegando a pagina");
+        driver.get("https://www.tutorialspoint.com/selenium/practice/nestedframes.php");
+
+        Logs.debug("Cambiamos al iFrame");
+        driver.switchTo().frame("frame1");
+
+        Logs.info("Verificando titulo del iframe");
+        Assert.assertTrue(driver.findElement(By.xpath("//h1[text()='New Tab']")).isDisplayed());
+
+        Logs.debug("Regresando a la pagina original");
+        driver.switchTo().defaultContent();
+
+        Logs.info("Verificando Pagina principal");
+        Assert.assertTrue(driver.findElement(By.xpath("//h1[text()='Nested Frames']")).isDisplayed());
     }
 }

@@ -1,9 +1,8 @@
-09:09:50.383 INFO  AUTOMATION - Suite iniciada: Default Suite
-09:09:50.406 INFO  AUTOMATION - Limpiando folder de evidencias
-09:09:52.202 INFO  AUTOMATION - Comenzando el test: testNewWindow
-09:09:52.211 INFO  AUTOMATION - Navegando a pagina
-09:09:53.346 INFO  AUTOMATION - Click en boton new window
-09:09:53.610 INFO  AUTOMATION - Verificamos que el texto
-09:09:53.855 INFO  AUTOMATION - Cerrando la ventana actual y regresando a la ventana original
-09:09:53.961 INFO  AUTOMATION - Test exitoso: testNewWindow
-09:09:54.061 INFO  AUTOMATION - Suite finalizada: Default Suite
+22:27:56.481 INFO  AUTOMATION - Suite iniciada: Default Suite
+22:27:56.502 INFO  AUTOMATION - Limpiando folder de evidencias
+22:27:58.550 INFO  AUTOMATION - Comenzando el test: testIframe
+22:27:58.558 INFO  AUTOMATION - Navegando a pagina
+22:28:00.042 INFO  AUTOMATION - Verificando titulo del iframe
+22:28:00.059 INFO  AUTOMATION - Verificando Pagina principal
+22:28:00.073 INFO  AUTOMATION - Test exitoso: testIframe
+22:28:00.170 INFO  AUTOMATION - Suite finalizada: Default Suite

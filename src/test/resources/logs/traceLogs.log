@@ -1,21 +1,17 @@
-09:09:50.383 INFO  AUTOMATION - Suite iniciada: Default Suite
-09:09:50.406 INFO  AUTOMATION - Limpiando folder de evidencias
-09:09:50.451 DEBUG AUTOMATION - Inicializando Driver
-09:09:51.833 DEBUG AUTOMATION - Maximizando Ventana
-09:09:52.156 DEBUG AUTOMATION - Eliminando Cookies
-09:09:52.160 DEBUG AUTOMATION - Iniciando Implicit wait de 5 segundos
-09:09:52.162 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
-09:09:52.202 INFO  AUTOMATION - Comenzando el test: testNewWindow
-09:09:52.211 INFO  AUTOMATION - Navegando a pagina
-09:09:53.344 DEBUG AUTOMATION - obteniendo el id de la ventana actual
-09:09:53.346 DEBUG AUTOMATION - windowId: 9323C46FDCDEDC28F4E455EF7F45560B
-09:09:53.346 INFO  AUTOMATION - Click en boton new window
-09:09:53.604 DEBUG AUTOMATION - Window Handles Set: [9323C46FDCDEDC28F4E455EF7F45560B, 603E2E3C7B3C0329218C073A03AC8C65]
-09:09:53.605 DEBUG AUTOMATION - Cambiando a la nueva ventana
-09:09:53.610 INFO  AUTOMATION - Verificamos que el texto
-09:09:53.855 INFO  AUTOMATION - Cerrando la ventana actual y regresando a la ventana original
-09:09:53.886 DEBUG AUTOMATION - Verificando la ventana original
-09:09:53.956 DEBUG AUTOMATION - Before test stop de allure
-09:09:53.961 INFO  AUTOMATION - Test exitoso: testNewWindow
-09:09:53.962 DEBUG AUTOMATION - Eliminando la session del Driver
-09:09:54.061 INFO  AUTOMATION - Suite finalizada: Default Suite
+22:27:56.481 INFO  AUTOMATION - Suite iniciada: Default Suite
+22:27:56.502 INFO  AUTOMATION - Limpiando folder de evidencias
+22:27:56.544 DEBUG AUTOMATION - Inicializando Driver
+22:27:58.159 DEBUG AUTOMATION - Maximizando Ventana
+22:27:58.498 DEBUG AUTOMATION - Eliminando Cookies
+22:27:58.505 DEBUG AUTOMATION - Iniciando Implicit wait de 5 segundos
+22:27:58.508 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
+22:27:58.550 INFO  AUTOMATION - Comenzando el test: testIframe
+22:27:58.558 INFO  AUTOMATION - Navegando a pagina
+22:28:00.015 DEBUG AUTOMATION - Cambiamos al iFrame
+22:28:00.042 INFO  AUTOMATION - Verificando titulo del iframe
+22:28:00.057 DEBUG AUTOMATION - Regresando a la pagina original
+22:28:00.059 INFO  AUTOMATION - Verificando Pagina principal
+22:28:00.069 DEBUG AUTOMATION - Before test stop de allure
+22:28:00.073 INFO  AUTOMATION - Test exitoso: testIframe
+22:28:00.074 DEBUG AUTOMATION - Eliminando la session del Driver
+22:28:00.170 INFO  AUTOMATION - Suite finalizada: Default Suite
