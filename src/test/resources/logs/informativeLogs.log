@@ -1,8 +1,10 @@
-22:27:56.481 INFO  AUTOMATION - Suite iniciada: Default Suite
-22:27:56.502 INFO  AUTOMATION - Limpiando folder de evidencias
-22:27:58.550 INFO  AUTOMATION - Comenzando el test: testIframe
-22:27:58.558 INFO  AUTOMATION - Navegando a pagina
-22:28:00.042 INFO  AUTOMATION - Verificando titulo del iframe
-22:28:00.059 INFO  AUTOMATION - Verificando Pagina principal
-22:28:00.073 INFO  AUTOMATION - Test exitoso: testIframe
-22:28:00.170 INFO  AUTOMATION - Suite finalizada: Default Suite
+22:59:57.174 INFO  AUTOMATION - Suite iniciada: Default Suite
+22:59:57.197 INFO  AUTOMATION - Limpiando folder de evidencias
+22:59:59.225 INFO  AUTOMATION - Comenzando el test: testCopyPasteKeyboard
+22:59:59.234 INFO  AUTOMATION - Navegando a la pagina
+23:00:09.746 INFO  AUTOMATION - current address: Apt. 206 69642 Sal Estate, Krajcikfurt, MI 96224 
+23:00:10.143 INFO  AUTOMATION - Seleccionando y Copiando el contenido
+23:00:10.171 INFO  AUTOMATION - Seleccionando y pegando el contenido
+23:00:11.580 INFO  AUTOMATION - Test fallido: testCopyPasteKeyboard
+23:00:11.825 INFO  AUTOMATION - Taking page source
+23:00:12.006 INFO  AUTOMATION - Suite finalizada: Default Suite

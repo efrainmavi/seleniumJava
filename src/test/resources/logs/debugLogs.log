@@ -1,17 +1,18 @@
-22:27:56.481 INFO  AUTOMATION - Suite iniciada: Default Suite
-22:27:56.502 INFO  AUTOMATION - Limpiando folder de evidencias
-22:27:56.544 DEBUG AUTOMATION - Inicializando Driver
-22:27:58.159 DEBUG AUTOMATION - Maximizando Ventana
-22:27:58.498 DEBUG AUTOMATION - Eliminando Cookies
-22:27:58.505 DEBUG AUTOMATION - Iniciando Implicit wait de 5 segundos
-22:27:58.508 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
-22:27:58.550 INFO  AUTOMATION - Comenzando el test: testIframe
-22:27:58.558 INFO  AUTOMATION - Navegando a pagina
-22:28:00.015 DEBUG AUTOMATION - Cambiamos al iFrame
-22:28:00.042 INFO  AUTOMATION - Verificando titulo del iframe
-22:28:00.057 DEBUG AUTOMATION - Regresando a la pagina original
-22:28:00.059 INFO  AUTOMATION - Verificando Pagina principal
-22:28:00.069 DEBUG AUTOMATION - Before test stop de allure
-22:28:00.073 INFO  AUTOMATION - Test exitoso: testIframe
-22:28:00.074 DEBUG AUTOMATION - Eliminando la session del Driver
-22:28:00.170 INFO  AUTOMATION - Suite finalizada: Default Suite
+22:59:57.174 INFO  AUTOMATION - Suite iniciada: Default Suite
+22:59:57.197 INFO  AUTOMATION - Limpiando folder de evidencias
+22:59:57.229 DEBUG AUTOMATION - Inicializando Driver
+22:59:58.836 DEBUG AUTOMATION - Maximizando Ventana
+22:59:59.173 DEBUG AUTOMATION - Eliminando Cookies
+22:59:59.179 DEBUG AUTOMATION - Iniciando Implicit wait de 5 segundos
+22:59:59.181 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
+22:59:59.225 INFO  AUTOMATION - Comenzando el test: testCopyPasteKeyboard
+22:59:59.234 INFO  AUTOMATION - Navegando a la pagina
+23:00:09.746 INFO  AUTOMATION - current address: Apt. 206 69642 Sal Estate, Krajcikfurt, MI 96224 
+23:00:10.143 INFO  AUTOMATION - Seleccionando y Copiando el contenido
+23:00:10.171 INFO  AUTOMATION - Seleccionando y pegando el contenido
+23:00:11.225 DEBUG AUTOMATION - Before test stop de allure
+23:00:11.580 INFO  AUTOMATION - Test fallido: testCopyPasteKeyboard
+23:00:11.580 DEBUG AUTOMATION - Tomando Screenshot
+23:00:11.825 INFO  AUTOMATION - Taking page source
+23:00:11.841 DEBUG AUTOMATION - Eliminando la session del Driver
+23:00:12.006 INFO  AUTOMATION - Suite finalizada: Default Suite
