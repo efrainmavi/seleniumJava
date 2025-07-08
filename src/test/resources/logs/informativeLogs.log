@@ -1,10 +1,10 @@
-22:59:57.174 INFO  AUTOMATION - Suite iniciada: Default Suite
-22:59:57.197 INFO  AUTOMATION - Limpiando folder de evidencias
-22:59:59.225 INFO  AUTOMATION - Comenzando el test: testCopyPasteKeyboard
-22:59:59.234 INFO  AUTOMATION - Navegando a la pagina
-23:00:09.746 INFO  AUTOMATION - current address: Apt. 206 69642 Sal Estate, Krajcikfurt, MI 96224 
-23:00:10.143 INFO  AUTOMATION - Seleccionando y Copiando el contenido
-23:00:10.171 INFO  AUTOMATION - Seleccionando y pegando el contenido
-23:00:11.580 INFO  AUTOMATION - Test fallido: testCopyPasteKeyboard
-23:00:11.825 INFO  AUTOMATION - Taking page source
-23:00:12.006 INFO  AUTOMATION - Suite finalizada: Default Suite
+18:33:12.619 INFO  AUTOMATION - Suite iniciada: Default Suite
+18:33:12.640 INFO  AUTOMATION - Limpiando folder de evidencias
+18:33:14.878 INFO  AUTOMATION - Comenzando el test: testCopyPasteKeyboard
+18:33:14.887 INFO  AUTOMATION - Navegando a la pagina
+18:33:20.229 INFO  AUTOMATION - current address: 2802 Tyson Corner, New Kandis, TN 65873 
+18:33:20.590 INFO  AUTOMATION - Seleccionando y Copiando el contenido
+18:33:20.626 INFO  AUTOMATION - Seleccionando y pegando el contenido
+18:33:20.668 INFO  AUTOMATION - Verificando que el input este en mayúsculas
+18:33:20.697 INFO  AUTOMATION - Test exitoso: testCopyPasteKeyboard
+18:33:20.891 INFO  AUTOMATION - Suite finalizada: Default Suite

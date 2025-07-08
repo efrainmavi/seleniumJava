@@ -3,7 +3,9 @@ package org.example.automation;
 import net.datafaker.Faker;
 import org.example.utilities.BaseTest;
 import org.example.utilities.Logs;
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -42,7 +44,7 @@ public class DemoQATests extends BaseTest {
         Logs.info("current address: %s ", currentAddress);
         WebElement currentAddressInput = driver.findElement(By.id("currentAddress"));
         WebElement permanentAddressInput = driver.findElement(By.id("permanentAddress"));
-
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 500);");
         currentAddressInput.sendKeys(currentAddress);
         currentAddressInput.click();
 
@@ -76,7 +78,7 @@ public class DemoQATests extends BaseTest {
 
             Logs.info("Seleccionando y pegando el contenido");
             permanentAddressInput.isEnabled();
-            //TODO Manejar anuncion (Quitarlo porque selenium lo detecta como iFrame)
+
             permanentAddressInput.click();
 
             new Actions(driver)
