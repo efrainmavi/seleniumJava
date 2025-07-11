@@ -1,17 +1,14 @@
-18:33:12.619 INFO  AUTOMATION - Suite iniciada: Default Suite
-18:33:12.640 INFO  AUTOMATION - Limpiando folder de evidencias
-18:33:12.684 DEBUG AUTOMATION - Inicializando Driver
-18:33:14.506 DEBUG AUTOMATION - Maximizando Ventana
-18:33:14.828 DEBUG AUTOMATION - Eliminando Cookies
-18:33:14.833 DEBUG AUTOMATION - Iniciando Implicit wait de 5 segundos
-18:33:14.835 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
-18:33:14.878 INFO  AUTOMATION - Comenzando el test: testCopyPasteKeyboard
-18:33:14.887 INFO  AUTOMATION - Navegando a la pagina
-18:33:20.229 INFO  AUTOMATION - current address: 2802 Tyson Corner, New Kandis, TN 65873 
-18:33:20.590 INFO  AUTOMATION - Seleccionando y Copiando el contenido
-18:33:20.626 INFO  AUTOMATION - Seleccionando y pegando el contenido
-18:33:20.668 INFO  AUTOMATION - Verificando que el input este en mayúsculas
-18:33:20.688 DEBUG AUTOMATION - Before test stop de allure
-18:33:20.697 INFO  AUTOMATION - Test exitoso: testCopyPasteKeyboard
-18:33:20.700 DEBUG AUTOMATION - Eliminando la session del Driver
-18:33:20.891 INFO  AUTOMATION - Suite finalizada: Default Suite
+19:46:32.049 INFO  AUTOMATION - Suite iniciada: Default Suite
+19:46:32.071 INFO  AUTOMATION - Limpiando folder de evidencias
+19:46:32.116 DEBUG AUTOMATION - Inicializando Driver
+19:46:34.315 DEBUG AUTOMATION - Maximizando Ventana
+19:46:34.633 DEBUG AUTOMATION - Eliminando Cookies
+19:46:34.641 DEBUG AUTOMATION - Iniciando Implicit wait de 5 segundos
+19:46:34.643 DEBUG AUTOMATION - Inicializando el driver con webdriver provider
+19:46:34.693 INFO  AUTOMATION - Comenzando el test: testTooltip
+19:46:37.830 INFO  AUTOMATION - Moviendo mouse al boton verde
+19:46:39.480 INFO  AUTOMATION - Verificando el tooltip
+19:46:39.505 DEBUG AUTOMATION - Before test stop de allure
+19:46:39.512 INFO  AUTOMATION - Test exitoso: testTooltip
+19:46:39.513 DEBUG AUTOMATION - Eliminando la session del Driver
+19:46:39.634 INFO  AUTOMATION - Suite finalizada: Default Suite
