@@ -49,7 +49,10 @@ public class DemoQATests extends BaseTest {
         WebElement permanentAddressInput = driver.findElement(By.id("permanentAddress"));
 
         //hacer scroll en la pagina para evitar anuncios
-        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 500);");
+        //((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 500);");
+        new Actions(driver)
+                .scrollByAmount(0,500)
+                .perform();
 
         String osSystem = System.getProperty("os.name").toLowerCase();
         if (osSystem.contains("win")){
@@ -99,6 +102,7 @@ public class DemoQATests extends BaseTest {
 
     @Test
     public void testMouseAction(){
+        Logs.info("Navegando a la pagina");
         driver.get("https://demoqa.com/droppable");
 
         WebElement figuraOrigen = driver.findElement(By.id("draggable"));
@@ -108,13 +112,17 @@ public class DemoQATests extends BaseTest {
                 .dragAndDrop(figuraOrigen, figuraDestino)
                 .perform();
 
+        new Actions(driver)
+                .scrollByAmount(0,300)
+                .perform();
         Logs.info("Verificando que el label sea visible");
-        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 300);");
+        //((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 300);");
         Assert.assertTrue(driver.findElement(By.xpath("//p[text()='Dropped!']")).isDisplayed());
     }
 
     @Test
     public void testTooltip() {
+        Logs.info("Navegando a la pagina");
         driver.get("https://demoqa.com/tool-tips");
 
         WebElement btnVerde = driver.findElement(By.id("toolTipButton"));

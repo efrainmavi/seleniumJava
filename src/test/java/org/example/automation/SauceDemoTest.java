@@ -3,15 +3,18 @@ package org.example.automation;
 import org.example.utilities.BaseTest;
 import org.example.utilities.Logs;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Set;
 
 public class SauceDemoTest extends BaseTest {
 
@@ -215,6 +218,44 @@ public class SauceDemoTest extends BaseTest {
         //sleep(2000);
 
         driver.findElement(By.cssSelector("[data-test='login-container']"));
+    }
+
+    @Test
+    public void testHandleCookies(){
+        llenarFormulario("standard_user","secret_sauce");
+
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        Logs.info("Obteniendo las cookies");
+        Set<Cookie> cookies = driver.manage().getCookies();
+
+        Logs.info("Verificar que solo existe una cookie");
+        Assert.assertEquals(cookies.size(), 1);
+
+        Logs.info("eliminando las cookies");
+        driver.manage().deleteAllCookies();
+
+        Logs.info("Obteniendo las cookies nuevamente");
+        cookies = driver.manage().getCookies();
+
+        Logs.info("Verificando que no hay cookies");
+        Assert.assertTrue(cookies.isEmpty());
+    }
+
+    @Test
+    public void testVerificandoCookies(){
+        llenarFormulario("standard_user","secret_sauce");
+
+        Logs.info("Verificando la pagina principal");
+        driver.findElement(By.cssSelector("[data-test='title']"));
+
+        Logs.info("Obteniendo las cookies");
+        Cookie cookie = driver.manage().getCookieNamed("session-username");
+
+        Logs.info("Verificar el valor de la cookie");
+        Assert.assertNotNull(cookie);
+        Assert.assertEquals(cookie.getValue(), "standard_user");
     }
 
     private void llenarFormulario(String userName, String password){
